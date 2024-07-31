@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  overflow: hidden; /* Prevent any overflow issues */
+  text-align: center;
+}
+
+.about-heading {
+  height: 40vh;
+  width: 100vw;
+  background: radial-gradient(#ff00624d, #022c4aee), url(../images/pieces-blue-stationery.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  position: relative;
+  z-index: 1;
+}
+
+.about-heading h1 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.about-contents {
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  background: radial-gradient(#022c4aee, #ff00624d), url(../images/top-view-office-supplies-with-copy-space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 50% 50%;
+  margin-top: -20vh; /* Adjust this value to control the overlap */
+  min-height: 80vh; /* Ensure content has enough space */
+}
+
+.about-contents h2, .about-contents h3, .about-contents p {
+  margin: 20px 0;
+  color: #fff; /* Adjust text color for readability */
+}
